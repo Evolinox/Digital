@@ -2178,8 +2178,6 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
 
         if (Screen.isMac()) {
             // Set macOS Menubar
-            System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Digital");
-            System.setProperty("apple.awt.application.name", "Digital");
             System.setProperty("apple.laf.useScreenMenuBar", "true");
 
             setMacCopyPasteTo(UIManager.get("TextField.focusInputMap"));
