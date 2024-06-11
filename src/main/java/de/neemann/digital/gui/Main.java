@@ -163,6 +163,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
      */
     private Main(MainBuilder builder) {
         super(Lang.get("digital"));
+
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setIconImages(IconCreator.createImages("icon32.png", "icon64.png", "icon128.png"));
 
@@ -2176,6 +2177,11 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
         URL.setURLStreamHandlerFactory(ElementHelpDialog.createURLStreamHandlerFactory());
 
         if (Screen.isMac()) {
+            // Set macOS Menubar
+            System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Digital");
+            System.setProperty("apple.awt.application.name", "Digital");
+            System.setProperty("apple.laf.useScreenMenuBar", "true");
+
             setMacCopyPasteTo(UIManager.get("TextField.focusInputMap"));
             setMacCopyPasteTo(UIManager.get("TextArea.focusInputMap"));
         }
