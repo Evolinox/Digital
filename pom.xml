@@ -313,10 +313,15 @@
                         <CFBundleDisplayName>Digital</CFBundleDisplayName>
                         <CFBundleShortVersionString>2024.06</CFBundleShortVersionString>
                         <CFBundlePackageType>APPL</CFBundlePackageType>
-                        <NSHumanReadableCopyright>App Bundle by Evolinox :)</NSHumanReadableCopyright>
+                        <CFBundleTypeExtensions>
+                            <string>dig</string>
+                        </CFBundleTypeExtensions>
                         <NSHighResolutionCapable>True</NSHighResolutionCapable>
                         <JVMMainClassName>de.neemann.digital.gui.Main</JVMMainClassName>
                     </plist>
+                    <codesign>
+                        <identity>-</identity>
+                    </codesign>
                 </configuration>
                 <executions>
                     <execution>
