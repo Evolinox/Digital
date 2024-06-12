@@ -856,7 +856,7 @@ public final class Main extends JFrame implements ClosingWindowListener.ConfirmS
                     Settings.getInstance().getAttributes().getValuesFrom(modified);
                 }
             }
-        }.setToolTip(Lang.get("menu_editSettings_tt"));
+        }.setAcceleratorCTRLplus(',').setToolTip(Lang.get("menu_editSettings_tt"));
 
 
         ToolTipAction actualToDefault = new ToolTipAction(Lang.get("menu_actualToDefault")) {
